@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+    </style>
+    <link rel = "stylesheet" type = "text/css" href = "et.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ET Safety Icons</title>
+</head>
+
+
+<body>
+
+<img class="bg" src="./Images/BG.svg"> </img>
+
+<div class="transition-grid">
+
+    <a href="/index.html">
+    <div class="nav-sec">
+    <img class="nav-arrow" height="25px" width="44.54px" src="back_arrow.svg" alt="navigation arrow">
+    </div>
+    </a>
+
+        <div class="main-hero1" onclick="nextImg1()" >
+            <img class="img1" src="./Images/et-header.jpg"></img>
+        </div>
+
+        <div class="main-hero2">
+            <img onclick="nextImg2()" class="img2" src="./Images/et1.jpg"></img>
+        </div>
+
+        <div class="main-hero3">
+            <img onclick="nextImg3()" class="img3" src="./Images/et2.jpg"></img>
+        </div>
+
+        <div class="main-hero4" >
+            <img onclick="nextImg4()" class="img4" src="./Images/et3.jpg"></img>
+        </div>
+
+        <div class="pagination">
+            <span class="numerator" id="numerator">1</span>
+            <span>/</span>
+            <span class="denominator">4</span>
+        </div>
+   
+    
+    <div class="project-text-grp">
+        <h3>PROJECT</h3>
+        <h2>Escuela Taller Safety Icons</h2>
+        <p>Escuela Taller de Filipinas Foundation, Inc. is a training center based in Intramuros, the historic walled city of Manila. Their mission is to uplift out-of-school youth from poverty by teaching them skills to preserve heritage structures such as churches and very (very) old houses.</p> 
+        
+        <p>This was part of an outreach program, led by our former university professors, that aimed to help local NGOs with their organizational communication. These icons belonged to an integrated safety communication project with the purpose of improving the NGOs safety record. Along with these icons, safety posters, videos, and PowerPoint presentations were produced to serve as visual aids to promote overall organizational safety.</p>
+    </div>
+
+    <div class="sidebar">
+        <h3>CLIENT</h3>
+        <h2>Escuela de Taller</h2> 
+        <h2>Filipinas Foundation,</h2>
+        <h2>Inc.</h2>
+
+        <br>
+
+        <h3>ROLE</h3>
+        <h2>Illustrator</h2>
+        <h2>Copywriter</h2>
+        <h2>Consultant</h2>
+    </div>
+
+    <div class="next-button">
+        <a href="/dice-1.html" style="text-decoration:none;">
+        <h3>NEXT PROJECT</h3>
+        <h2>Dice205 Service Illustrations</h2>
+        </a>
+    </div>
+
+</div>
+
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="node_modules/swup/dist/swup.min.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+        gsap.to('.main-hero2', {x: -1000, duration: .01})
+        gsap.to('.main-hero3', {x: -1000, duration: .01})
+        gsap.to('.main-hero4', {x: -1000, duration: .01})
+
+        function nextImg1(){
+            gsap.to('.main-hero1', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 2
+        }
+
+        function nextImg2(){
+            gsap.to('.main-hero2', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 3
+        }
+
+        function nextImg3(){
+            gsap.to('.main-hero3', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 4
+        }
+
+        function nextImg4(){
+            gsap.to('.main-hero4', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 1
+        }
+
+        gsap.from('.main-hero1', {opacity: 0, duration: 1, delay: .8, x: -200})
+        gsap.from('h3', {opacity: 0, duration: 1, delay: 1, x: 50})
+        gsap.from('h2', {opacity: 0, duration: 1, delay: 1.2, x: 50})
+        gsap.from('p', {opacity: 0, duration: 1, delay: 1.4, x: 50, stagger: .3})
+        gsap.from('.pagination', {opacity: 0, duration: 1, delay: 1.8, x: -50, stagger: .3})
+        gsap.from('.nav-sec', {opacity: 0, duration: 1, delay: 1.8})
+
+        gsap.from('.sidebar', {opacity: 0, duration: 1, delay: 2.6, x: 50, stagger: .3})
+        gsap.from('.next-button', {opacity: 0, duration: 1, delay: 3.4, x: 50, stagger: .3})
+    
+</script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+    </style>
+    <link rel = "stylesheet" type = "text/css" href = "fitness.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyFit Plan</title>
+</head>
+
+
+<body>
+
+<img class="bg" src="./Images/BG.svg"> </img>
+
+<div class="transition-grid">
+
+    <a href="/index.html">
+    <div class="nav-sec">
+    <img class="nav-arrow" height="25px" width="44.54px" src="back_arrow.svg" alt="navigation arrow">
+    </div>
+    </a>
+
+        <div class="main-hero1" onclick="nextImg1()" >
+            <img class="img1" src="./Images/Fitness-First-Hero.jpg"></img>
+        </div>
+
+        <div class="main-hero2">
+            <img onclick="nextImg2()" class="img2" src="./Images/ff1.jpg"></img>
+        </div>
+
+        <div class="main-hero3">
+            <img onclick="nextImg3()" class="img3" src="./Images/ff2.jpg"></img>
+        </div>
+
+        <div class="main-hero4" >
+            <img onclick="nextImg4()" class="img4" src="./Images/ff3.jpg"></img>
+        </div>
+
+        <div class="pagination">
+            <span class="numerator" id="numerator">1</span>
+            <span>/</span>
+            <span class="denominator">4</span>
+        </div>
+   
+    
+    <div class="project-text-grp">
+        <h3>PROJECT</h3>
+        <h2>MyFit Plan</h2>
+        <p>Fitness First Philippines is the local arm of an international fitness and wellness center brand.</p> 
+        
+        <p>The project is a value-added service that acts as an alternative point-of-sale system which enables Fitness First’s clients, new and old, to craft their own bespoke fitness programs. It allows them to own their fitness and satisfy their needs as much as possible to be able to achieve their fitness goals.</p>
+    
+        <p>I worked as the only designer on the project, design and development lasted for 2 and a half months and is still being maintained and improved. It increased client acquisition rates, client retention rates, and sales.</p>
+    </div>
+
+    <div class="sidebar">
+        <h3>CLIENT</h3>
+        <h2>Fitness First <br> Philippines</h2>
+
+        <br>
+
+        <h3>AGENCY</h3>
+        <h2>Dice205 Digital Co.</h2>
+
+        <br>
+
+        <h3>ROLE</h3>
+        <h2>UI/UX Designer</h2>
+    </div>
+
+    <div class="next-button">
+        <a href="/jfc.html" style="text-decoration:none;">
+        <h3>NEXT PROJECT</h3>
+        <h2>JFC eValues</h2>
+        </a>
+    </div>
+
+</div>
+
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="node_modules/swup/dist/swup.min.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+        gsap.to('.main-hero2', {x: -1000, duration: .01})
+        gsap.to('.main-hero3', {x: -1000, duration: .01})
+        gsap.to('.main-hero4', {x: -1000, duration: .01})
+
+        function nextImg1(){
+            gsap.to('.main-hero1', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 2
+        }
+
+        function nextImg2(){
+            gsap.to('.main-hero2', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 3
+        }
+
+        function nextImg3(){
+            gsap.to('.main-hero3', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 4
+        }
+
+        function nextImg4(){
+            gsap.to('.main-hero4', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 1
+        }
+
+        gsap.from('.main-hero1', {opacity: 0, duration: 1, delay: .8, x: -200})
+        gsap.from('h3', {opacity: 0, duration: 1, delay: 1, x: 50})
+        gsap.from('h2', {opacity: 0, duration: 1, delay: 1.2, x: 50})
+        gsap.from('p', {opacity: 0, duration: 1, delay: 1.4, x: 50, stagger: .3})
+        gsap.from('.pagination', {opacity: 0, duration: 1, delay: 1.8, x: -50, stagger: .3})
+        gsap.from('.nav-sec', {opacity: 0, duration: 1, delay: 1.8})
+
+        gsap.from('.sidebar', {opacity: 0, duration: 1, delay: 2.6, x: 50, stagger: .3})
+        gsap.from('.next-button', {opacity: 0, duration: 1, delay: 3.4, x: 50, stagger: .3})
+    
+</script>
+
+
+</body>
+
+
+
+</html>

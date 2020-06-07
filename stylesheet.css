@@ -1,0 +1,583 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+
+body {
+    background-color: #191919;
+    position: relative;
+    height: 100vh;
+}
+
+.profile {
+    color: white;
+    font-family: 'Nanum Myeongjo';
+}
+
+.transition-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-auto-flow: none;
+  }
+
+main {
+    min-width: 0;
+  }
+
+.bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
+
+
+/* hero image group */
+
+/* hero image 1 */
+.hero-img1 {
+    background-color: tan;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.hero-img1:hover {
+    filter: grayscale(0%);
+}
+
+.img1 {
+    height: 110%;
+    margin-left: -230px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img1:hover {
+    height: 100%;
+    filter: grayscale(0%);
+}
+/* hero image 1 */
+
+/* hero image 2 */
+.hero-img2 {
+    background-color: tan;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 50vh;
+    z-index: 0;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.hero-img2:hover {
+    filter: grayscale(0%);
+}
+
+.img2 {
+    height: 150%;
+    margin-left: -50px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img2:hover {
+    height: 113%;
+    filter: grayscale(0%);
+}
+/* hero image 2 */
+
+
+/* hero image 3 */
+.hero-img3 {
+    background-color: royalblue;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 50vh;
+    z-index: 0;
+}
+
+.hero-img3:hover {
+    filter: grayscale(0%);
+}
+
+.img3 {
+    height: 150%;
+    margin-left: -130px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img3:hover {
+    height: 105%;
+    margin-left: -28px;
+    filter: grayscale(0%);
+}
+/* hero image 3 */
+
+
+/* hero image 4 */
+.hero-img4 {
+    background-color: tan;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.hero-img4:hover {
+    filter: grayscale(0%);
+}
+
+.img4 {
+    height: 110%;
+    margin-left: -50px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img4:hover {
+    height: 100%;
+    filter: grayscale(0%);
+}
+/* hero image 4 */
+
+
+/* hero image 5 */
+.hero-img5 {
+    background-color: tan;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 50vh;
+    z-index: 0;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.hero-img5:hover {
+    filter: grayscale(0%);
+}
+
+.img5 {
+    height: 150%;
+    margin-left: -50px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img5:hover {
+    height: 113%;
+    filter: grayscale(0%);
+}
+/* hero image 5 */
+
+/* hero image 6 */
+.hero-img6 {
+    background-color: tan;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 50vh;
+    z-index: 0;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.hero-img6:hover {
+    filter: grayscale(0%);
+}
+
+.img6 {
+    height: 150%;
+    margin-left: -50px;
+    margin-top: -25px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img6:hover {
+    height: 113%;
+    filter: grayscale(0%);
+}
+/* hero image 6 */
+
+/* hero image 7 */
+.hero-img7 {
+    background-color: wheat;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    overflow: hidden;
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+.hero-img7:hover {
+    filter: grayscale(0%);
+}
+
+.img7 {
+    height: 110%;
+    margin-left: -230px;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img7:hover {
+    height: 100%;
+    filter: grayscale(0%);
+}
+/* hero image 7 */
+
+/* hero image 8 */
+.hero-img8 {
+    background-color: wheat;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    overflow: hidden;
+    filter: grayscale(100%);
+    height: 50vh;
+    z-index: 0;
+}
+
+.hero-img8:hover {
+    filter: grayscale(0%);
+}
+
+.img8 {
+    height: 150%;
+    transition: .3s;
+    filter: grayscale(100%)
+}
+
+.img8:hover {
+    height: 100%;
+    filter: grayscale(0%);
+}
+/* hero image 8 */
+
+/* hero image 9 */
+
+.hero-img9 {
+    background-color: thistle;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 50vh;
+    z-index: 0;
+}
+
+.hero-img9:hover {
+    filter: grayscale(0%);
+}
+
+.img9 {
+    height: 150%;
+    transition: .3s;
+    margin-left: -50px;
+    filter: grayscale(100%)
+}
+
+.img9:hover {
+    height: 100%;
+    margin-left: -10px;
+    filter: grayscale(0%);
+}
+/* hero image 9 */
+
+/* hero image group */
+
+
+
+
+/* beginning introduction group */
+
+.intro-grp p{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.intro-grp p span{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 800;
+    font-size: 35px;
+    opacity: 1;
+}
+
+.intro-grp{
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+/* ending introduction group */
+
+
+
+
+
+
+
+
+/* beginning certification group */
+
+.cert-grp{
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #6E6E6E;
+    margin-bottom: 8px;
+}
+
+.cert-subtitle1 span{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+
+.cert-subtitle2 span{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+
+.cert-subtitle3 span{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+
+.cert-subtitle1{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 29px;
+    margin-bottom: 22px;
+    color: grey;
+    transition: .3s;
+}
+
+.cert-subtitle2{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 29px;
+    margin-bottom: 22px;
+    color: grey;
+    transition: .3s;
+}
+
+.cert-subtitle3{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 29px;
+    margin-bottom: 22px;
+    color: grey;
+    transition: .2s;
+}
+
+.cert-subtitle1:hover{
+    margin-left: 37px;
+}
+
+.cert-subtitle2:hover{
+    margin-left: 37px;
+}
+
+.cert-subtitle3:hover{
+    margin-left: 37px;
+}
+
+img{
+    position: absolute;
+}
+
+/* ending certification group */
+
+
+
+
+/* about group */
+
+.abt-img1 {
+    background-color: wheat;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    overflow: hidden;
+}
+
+.abt-class-img1 {
+    height: 100%;
+    transition: .3s;
+    margin-left: -150px;
+}
+
+.abt-grp{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.abt-grp h3{
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+}
+
+.abt-grp h2{
+    margin-top: -8px;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+
+.abt-grp p{
+    margin-top: 35px;
+    margin-right: 50px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.abt-grp p span{ 
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.abt-grp p span:hover{ 
+    opacity: 1;
+}
+
+.abt-socials{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 1;
+}
+
+.abt-socials1{
+    left: 0px;
+    position: relative;
+}
+
+.abt-socials2{
+    padding-left: 20px;
+    position: relative;
+}
+
+.abt-socials3{
+    padding-left: 20px;
+    position: relative;
+}
+/* about group */
+
+
+
+
+
+/* nav group */
+
+li label .nav1{
+    list-style: none;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+li label .nav2{
+    list-style: none;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: .5;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+li label .nav2:hover{
+    transition: 0.3s;
+    opacity: 1;
+    font-size: 25px;
+}
+
+li label input:hover ~ span{
+    opacity: 1;
+}
+
+li label input:checked ~ span{
+    opacity: 1;
+    font-size: 25px;
+}
+
+label input{
+    display: none;
+}
+
+.nav5{
+    color: white;
+}
+
+/* nav group */
+
+
+
+
+
+
+html.is-animating .transition-profile{
+    opacity: 0;
+    transition: 1s;
+}
+
+html.is-animating .transition-grid{
+    opacity: 0;
+    transition: .5s;
+}
+
+html.is-leaving .transition-grid{
+    opacity: 0;
+    transition: .5s;
+}
+
+
+
+
+
+
+

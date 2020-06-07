@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+    </style>
+    <link rel = "stylesheet" type = "text/css" href = "jfc.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JFC eValues</title>
+</head>
+
+
+<body>
+
+<img class="bg" src="./Images/BG.svg"> </img>
+
+<div class="transition-grid">
+
+    <a href="/index.html">
+    <div class="nav-sec">
+    <img class="nav-arrow" height="25px" width="44.54px" src="back_arrow.svg" alt="navigation arrow">
+    </div>
+    </a>
+
+        <div class="main-hero1" onclick="nextImg1()" >
+            <img class="img1" src="./Images/jfc-head.jpg"></img>
+        </div>
+
+        <div class="main-hero2">
+            <img onclick="nextImg2()" class="img2" src="./Images/jfc2.jpg"></img>
+        </div>
+
+        <div class="main-hero3">
+            <img onclick="nextImg3()" class="img3" src="./Images/jfc3.jpg"></img>
+        </div>
+
+        <div class="main-hero4" >
+            <img onclick="nextImg4()" class="img4" src="./Images/jfc4.jpg"></img>
+        </div>
+
+        <div class="main-hero5" >
+            <img onclick="nextImg5()" class="img5" src="./Images/jfc5.jpg"></img>
+        </div>
+
+        <div class="pagination">
+            <span class="numerator" id="numerator">1</span>
+            <span>/</span>
+            <span class="denominator">5</span>
+        </div>
+   
+    
+    <div class="project-text-grp">
+        <h3>PROJECT</h3>
+        <h2>JFC eValues</h2>
+        <p>Jollibee Food Corporation (JFC) is the largest fast food chain in the Philippines with over 6 brands and 1,150 stores nationwide.</p> 
+        
+        <p>The project was a learning management system which aimed to improve the company’s on-boarding process by digitizing their values training material, adding interactive games, and establishing an exam feature to ensure that applicants-in-training know JFC’s values inside and out.</p>
+    
+        <p>I worked as the lead designer and Adobe Captivate developer, together with 3 other supporting designers. Design and development lasted for 5 months and the project was in its final phase before it was discontinued due to reasons that I can't disclose (i.e., NDA). Adobe Captivate was used to develop the whole platform.</p>
+
+        <p>I'm really proud of the work we've done with this even though it didn't see the light of day.</p>
+    </div>
+
+    <div class="sidebar">
+        <h3>CLIENT</h3>
+        <h2>Jollibee Food Corporation </h2>
+
+        <br>
+
+        <h3>AGENCY</h3>
+        <h2>Dice205 Digital Co.</h2>
+
+        <br>
+
+        <h3>ROLE</h3>
+        <h2>Lead UI/UX Designer</h2> <h2>Illustrator</h2> <h2>Captivate Developer</h2>
+    </div>
+
+    <div class="next-button">
+        <a href="/report.html" style="text-decoration:none;">
+        <h3>NEXT PROJECT</h3>
+        <h2>JGF Annual Report</h2>
+        </a>
+    </div>
+
+</div>
+
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="node_modules/swup/dist/swup.min.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+        gsap.to('.main-hero2', {x: -1000, duration: .01})
+        gsap.to('.main-hero3', {x: -1000, duration: .01})
+        gsap.to('.main-hero4', {x: -1000, duration: .01})
+
+        function nextImg1(){
+            gsap.to('.main-hero1', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 2
+        }
+
+        function nextImg2(){
+            gsap.to('.main-hero2', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero2', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 3
+        }
+
+        function nextImg3(){
+            gsap.to('.main-hero3', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero3', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 4
+        }
+
+        function nextImg4(){
+            gsap.to('.main-hero4', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero4', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero5', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 5
+        }
+
+        function nextImg5(){
+            gsap.to('.main-hero5', {opacity: 0, duration: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero5', {x: -1000, duration: .5, delay: .5, ease: Expo.easeOut})
+            gsap.to('.main-hero1', {x: 0, opacity: 1, duration: .3, delay: .01, ease: Expo.easeOut})
+            document.getElementById("numerator").innerHTML = 1
+        }
+
+        gsap.from('.main-hero1', {opacity: 0, duration: 1, delay: .8, x: -200})
+        gsap.from('h3', {opacity: 0, duration: 1, delay: 1, x: 50})
+        gsap.from('h2', {opacity: 0, duration: 1, delay: 1.2, x: 50})
+        gsap.from('p', {opacity: 0, duration: 1, delay: 1.4, x: 50, stagger: .3})
+        gsap.from('.pagination', {opacity: 0, duration: 1, delay: 1.8, x: -50, stagger: .3})
+        gsap.from('.nav-sec', {opacity: 0, duration: 1, delay: 1.8})
+
+        gsap.from('.sidebar', {opacity: 0, duration: 1, delay: 2.6, x: 50, stagger: .3})
+        gsap.from('.next-button', {opacity: 0, duration: 1, delay: 3.4, x: 50, stagger: .3})
+    
+</script>
+
+
+</body>
+
+
+
+</html>
