@@ -9,6 +9,20 @@ body {
     height: 100vh;
 }
 
+#progress {
+    height: 10px;
+    background: white;
+    position: absolute;
+    transition: width 0.5s ease;
+    top: 45%;
+    opacity: 1;
+    z-index: 2;
+}
+
+.oops h2 {
+    opacity: 0;
+}
+
 .profile {
     color: white;
     font-family: 'Nanum Myeongjo';
@@ -100,6 +114,8 @@ main {
 .hero-img3 {
     background-color: royalblue;
     grid-column: 3/4;
+    overflow: hidden;
+    filter: grayscale(100%);
     grid-row: 2/3;
     height: 50vh;
     z-index: 0;
@@ -270,6 +286,8 @@ main {
     background-color: thistle;
     grid-column: 3/4;
     grid-row: 2/3;
+    overflow: hidden;
+    filter: grayscale(100%);
     height: 50vh;
     z-index: 0;
 }
@@ -579,5 +597,10 @@ html.is-leaving .transition-grid{
 
 
 
+@media only screen and (max-width: 768px){
+    .oops h2 {
+        opacity: 1;
+    }
+}
 
 
