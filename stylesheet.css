@@ -82,7 +82,7 @@ main {
     background-color: tan;
     grid-column: 3/4;
     grid-row: 1/2;
-    height: 50vh;
+    height: 100%;
     z-index: 0;
     overflow: hidden;
     filter: grayscale(100%);
@@ -113,7 +113,7 @@ main {
     overflow: hidden;
     filter: grayscale(100%);
     grid-row: 2/3;
-    height: 50vh;
+    height: 100%;
     z-index: 0;
 }
 
@@ -988,7 +988,7 @@ h2{
 /* nav group */
 
 .nav-grp{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .nav-grp li label .nav1{
