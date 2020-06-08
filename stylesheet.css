@@ -643,15 +643,14 @@ html.is-leaving .transition-grid{
     }
     
     .img1 {
-        height: 155%;
-        margin-left: -80px;
-        margin-top: -70px;
+        height: 120%;
         transition: .3s;
+        margin-left: -10px;
         filter: grayscale(0%);
     }
 
     .img1:hover {
-        height: 165%;
+        height: 155%;
         margin-left: -150px;
         margin-top: -80px;
         transition: .3s;
@@ -672,8 +671,6 @@ html.is-leaving .transition-grid{
     
     .img2 {
         height: 120%;
-        margin-left: -50px;
-        margin-top: -0px;
         transition: .3s;
         filter: grayscale(0%);
     }
@@ -699,9 +696,7 @@ html.is-leaving .transition-grid{
     }
     
     .img3 {
-        height: 145%;
-        margin-left: -160px;
-        margin-top: -70px;
+        height: 130%;
         transition: .3s;
         filter: grayscale(0%);
     }
