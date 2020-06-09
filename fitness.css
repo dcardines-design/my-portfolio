@@ -53,9 +53,9 @@ main {
 }
 
 .img1 {
-    height: 100vh;
-    margin-top: -40px;
-    margin-left: -100px;
+    height: 110vh;
+    margin-top: -70px;
+    margin-left: -80px;
     transition: .3s;
 }
 
