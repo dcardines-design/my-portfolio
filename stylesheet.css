@@ -625,7 +625,7 @@ html.is-leaving .transition-grid{
         background-color: tan;
         grid-row: 2/3;   
         grid-column: 1/4;
-        height: 25vh;
+        height: 50vh;
         z-index: 1;
         filter: grayscale(0%);
         overflow: hidden;
@@ -633,14 +633,14 @@ html.is-leaving .transition-grid{
     }
     
     .img1 {
-        height: 120%;
+        height: 100%;
         transition: .3s;
         margin-left: -10px;
         filter: grayscale(0%);
     }
 
     .img1:hover {
-        height: 155%;
+        height: 100%;
         margin-left: -150px;
         margin-top: -80px;
         transition: .3s;
@@ -660,13 +660,13 @@ html.is-leaving .transition-grid{
     }
     
     .img2 {
-        height: 120%;
+        height: 100%;
         transition: .3s;
         filter: grayscale(0%);
     }
 
     .img2:hover {
-        height: 130%;
+        height: 100%;
         margin-left: -172px;
         margin-top: -0px;
         transition: .3s;
@@ -686,13 +686,13 @@ html.is-leaving .transition-grid{
     }
     
     .img3 {
-        height: 130%;
+        height: 100%;
         transition: .3s;
         filter: grayscale(0%);
     }
 
     .img3:hover {
-        height: 155%;
+        height: 100%;
         margin-left: -280px;
         margin-top: -130px;
         transition: .3s;
