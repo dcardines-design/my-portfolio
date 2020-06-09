@@ -625,7 +625,7 @@ html.is-leaving .transition-grid{
         background-color: tan;
         grid-row: 2/3;   
         grid-column: 1/4;
-        height: 50vh;
+        height: 25vh;
         z-index: 1;
         filter: grayscale(0%);
         overflow: hidden;
