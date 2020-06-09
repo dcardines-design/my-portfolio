@@ -874,7 +874,7 @@ html.is-leaving .transition-grid{
 .intro-grp p{
 font-family: 'Nanum Myeongjo';
 font-weight: 400;
-font-size: 18px;
+font-size: 30px;
 margin-bottom: -40px;
 }
 
@@ -882,7 +882,7 @@ margin-bottom: -40px;
 font-family: 'Nanum Myeongjo';
 font-weight: 800;
 opacity: 1;
-font-size: 30px;
+font-size: 50px;
 }
 
 .intro-grp{
