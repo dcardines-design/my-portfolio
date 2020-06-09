@@ -644,11 +644,11 @@ html.is-leaving .transition-grid{
     }
     
     .img1 {
-        height: 120%;
+        height: 90vh;
         transition: .3s;
         filter: grayscale(0%);
-        margin-left: -230px;
-        margin-top: -20px;
+        margin-left: -280px;
+        margin-top: -50px;
         margin-right: auto;
         display: block;
     }
@@ -678,11 +678,11 @@ html.is-leaving .transition-grid{
     }
     
     .img2 {
-        height: 120%;
+        height: 60vh;
         transition: .3s;
         filter: grayscale(0%);
         margin-left: -265px;
-        margin-top: -20px;
+        margin-top: -10px;
         margin-right: auto;
         display: block;
     }
@@ -713,11 +713,11 @@ html.is-leaving .transition-grid{
     }
     
     .img3 {
-        height: 120%;
+        height: 80vh;
         transition: .3s;
         filter: grayscale(0%);
-        margin-left: -265px;
-        margin-top: -20px;
+        margin-left: -365px;
+        margin-top: -90px;
         margin-right: auto;
         display: block;
     }
